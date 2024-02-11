@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>
+            Muslimly
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="about.html">
+        <link rel="stylesheet" href="contact.html">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body class="body">
+        <div class="main-header">
+
+        <a href="main.html" class="a-home"> Home </a>
+        <a href="about.html" class="a-about"> About </a>
+        <a href="contact.html" class="a-contact"> Contact </a>
+
+        <img class="image-quran" src="Quran-Nobg.png" alt="">
+        <h1 class="title">
+            Muslimly
+        </h1>
+        <div class="info">
+            <a href="1-1.html"><img class="rev-img" src="1-1-1.webp" alt=""></a>
+            <a href="2-2.html"><img class="perm-img" src="2-2-2.jpg" alt=""></a>
+            <a href="3-3.html"><img class="web-img" src="pc.jpg" alt=""></a>
+            <a href="4-4.html"><img class="mem-img" src="4-4-4.jpg" alt=""></a>
+            <a href="5-5.html"><img class="other-img" src="5-5-5-5.png" alt=""></a>
+            <a href="1-1.html" class="rev">Need Help Reverting</a>
+            <a href="2-2.html" class="perm">Is It Permissible</a>
+            <a href="3-3.html" class="web">Website Related Question</a>
+            <a href="4-4.html" class="mem">Become a Member</a>
+            <a href="5-5.html" class="other">Other</a>
+            <h2 style="z-index: 2; display: inline; width: max-content; margin: 0; position: absolute; top: 15px; left: 525px; font-family: 'Roboto', sans-serif; font-weight: bolder; font-size: 30; color: azure; cursor: default;">How can we help?</h2> <div class="rectangle"></div>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><span class="hamburger" style="font-size: 40px;">&#9776;</span></label>
+        <nav class="menu">
+            <ul>
+                <li><a class="text" href="quran.html" target="_blank">Quran</a></li>
+                <li><a class="text" href="hadiths.html" target="_blank">Hadiths</a></li>
+                <li><a class="text" href="ab-is.html" target="_blank">About Islam</a></li>
+                <li><a class="text" href="courses.html" target="_blank">Courses</a></li>
+                <li><a class="text" href="3.html" target="_blank">3 Daily Facts</a></li>
+                <li><a class="text" href="community.html" target="_blank">The Community Center</a></li>
+              </ul>
+        </nav>
+
+        <input type="checkbox" id="sett-toggle" class="sett-toggle">
+        <label for="sett-toggle" class="sett-icon"><span class="tricolon" style="font-size: 40px;">&#8285;</span></label>
+        <nav class="sett">
+          <ul>
+            <li><a class="text" href="profile.html">Profile</a></li>
+            <p class="text-other">Themes</p>
+
+
+            <input type="checkbox" id="toggle-switch" class="toggle-checkbox">
+            <label for="toggle-switch" class="toggle-icons sun-icon">
+                <i class="fas fa-sun"></i>
+            </label>
+            <label for="toggle-switch" class="toggle-icons crescent-icon">
+                <i class="fas fa-moon"></i>
+            </label>
+
+
+            <p class="text-other">Audio</p>
+            <li><a class="text" href="log.html">Log out</a></li>
+          </ul>
+        </nav>
+        </div>
+        <script>
+            const menuToggle = document.getElementById('menu-toggle');
+            const menu = document.querySelector('.menu');
+            const settToggle = document.getElementById('sett-toggle');
+            const sett = document.querySelector('.sett');
+          
+            menuToggle.addEventListener('change', function() {
+                menu.classList.toggle('open');
+                if (menu.classList.contains('open')) {
+                    sett.checked = false; // close the sett menu if opened
+                }
+            });
+          
+            settToggle.addEventListener('change', function() {
+                sett.classList.toggle('open');
+                if (sett.classList.contains('open')) {
+                    menu.checked = false; // close the menu if opened
+                }
+            });
+            document.getElementById('toggle-switch').addEventListener('change', function() {
+                if (this.checked) {
+          
+          
+                  document.body.style.background = '#ADD8E6'; // Moon
+                    document.querySelector('.main-header').style.background = '#688e94';
+                    document.querySelector('.title').style.color = '#000514';
+                    document.querySelector('.page').style.background = '#688e94';
+                    document.querySelector('.Welcome').style.color = '#000514';
+                    document.querySelector('.Get').style.color = '#000514';
+                    document.querySelector('.Muslimly').style.color = '#ffffff';
+                    document.querySelector('.ham').style.color = '#000514';
+                    document.querySelector('.Icon').style.color = '#000514';
+                    document.querySelector('.menu').style.background = '#e6f9fc';
+                    document.querySelector('.sett').style.background = '#e6f9fc';
+                    
+          
+          
+                } else {
+          
+                    document.body.style.backgroundColor = '#0b2149'; // Sun
+                    document.querySelector('.main-header').style.background = '#040D12';
+                    document.querySelector('.title').style.color = '#ebfaff';
+                    document.querySelector('.page').style.background = '#040D12';
+                    document.querySelector('.Welcome').style.color = '#ffffff';
+                    document.querySelector('.Get').style.color = '#ffffff';
+                    document.querySelector('.Muslimly').style.color = '#00388c';
+                    document.querySelector('.ham').style.color = '#ffffff';
+                    document.querySelector('.Icon').style.color = '#ffffff';
+                    document.querySelector('.sett').style.background = '#001117';
+                    document.querySelector('.menu').style.background = '#001117';
+                }
+            });
+          </script>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
